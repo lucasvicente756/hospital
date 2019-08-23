@@ -2,9 +2,10 @@ package br.com.model;
 
 public class EnfermidadePessoal {
 	
-		int idEnfermidadePessoal;
-		String cometario;
-		String statusDeEnfermidade;
+		private int idEnfermidadePessoal;
+		private String cometario;
+		private String statusDeEnfermidade;
+		
 		public int getIdEnfermidadePessoal() {
 			return idEnfermidadePessoal;
 		}

@@ -5,13 +5,13 @@ import java.util.List;
 
 public class Atendimento {
 	
-	int idAtendimento;
-	String comentarioEnfemeiro;
-	String comtarioMedico;
-	Float peso;
-	Float altura;
-	Date data;
-	List<EnfermidadePessoal> doenca;
+	private int idAtendimento;
+	private String comentarioEnfemeiro;
+	private String comtarioMedico;
+	private Float peso;
+	private Float altura;
+	private Date data;
+	private List<EnfermidadePessoal> doenca;
 	public int getIdAtendimento() {
 		return idAtendimento;
 	}
@@ -66,5 +66,6 @@ public class Atendimento {
 		this.doenca = doenca;
 	}
 	
-
+	
+	
 }

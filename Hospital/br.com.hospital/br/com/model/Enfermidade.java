@@ -2,10 +2,10 @@ package br.com.model;
 
 public class Enfermidade {
 	
-	int idEnfermidade;
-	String nome;
-	String tipo;
-	String descricao;
+	private int idEnfermidade;
+	private String nome;
+	private String tipo;
+	private String descricao;
 	public int getIdEnfermidade() {
 		return idEnfermidade;
 	}
@@ -37,5 +37,7 @@ public class Enfermidade {
 		this.tipo = tipo;
 		this.descricao = descricao;
 	}
+	
+	
 	
 }

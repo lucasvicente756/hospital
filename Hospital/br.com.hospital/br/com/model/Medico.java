@@ -2,8 +2,8 @@ package br.com.model;
 
 public class Medico extends Funcionario{
 	
-	int numeroderesgistro;
-	String especialdade;
+	private int numeroderesgistro;
+	private String especialdade;
 	public int getNumeroderesgistro() {
 		return numeroderesgistro;
 	}
@@ -16,9 +16,11 @@ public class Medico extends Funcionario{
 	public void setEspecialdade(String especialdade) {
 		this.especialdade = especialdade;
 	}
-	public Medico(int idFuncionario, String login, String senha, String statusDoUsuario, int numeroderesgistro,
-			String especialdade) {
-		super(idFuncionario, login, senha, statusDoUsuario);
+	public Medico(int idPessoa, String nome, String cpf, int idade, String tipoSanguineo, String sexo,
+			String statusDePessoa, int idFuncionario, String login, String senha, String statusDoUsuario,
+			int numeroderesgistro, String especialdade) {
+		super(idPessoa, nome, cpf, idade, tipoSanguineo, sexo, statusDePessoa, idFuncionario, login, senha,
+				statusDoUsuario);
 		this.numeroderesgistro = numeroderesgistro;
 		this.especialdade = especialdade;
 	}

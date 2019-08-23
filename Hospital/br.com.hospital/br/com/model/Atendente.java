@@ -1,22 +1,21 @@
 package br.com.model;
 
-public class Atendente extends Funcionario {
+public class Atendente extends Gerente {
 	
-	int cadastrarPaciente;
-
-	public int getCadastrarPaciente() {
-		return cadastrarPaciente;
+	public Atendente(int idPessoa, String nome, String cpf, int idade, String tipoSanguineo, String sexo,
+			String statusDePessoa, int idFuncionario, String login, String senha, String statusDoUsuario,
+			String cargo) {
+		super(idPessoa, nome, cpf, idade, tipoSanguineo, sexo, statusDePessoa, idFuncionario, login, senha, statusDoUsuario,
+				cargo);
 	}
 
-	public void setCadastrarPaciente(int cadastrarPaciente) {
-		this.cadastrarPaciente = cadastrarPaciente;
+	public int cadastrarPaciente(){
+		return 0;
 	}
 
-	public Atendente(int idFuncionario, String login, String senha, String statusDoUsuario, int cadastrarPaciente) {
-		super(idFuncionario, login, senha, statusDoUsuario);
-		this.cadastrarPaciente = cadastrarPaciente;
-	}
 	
+
 	
+
 	
 }

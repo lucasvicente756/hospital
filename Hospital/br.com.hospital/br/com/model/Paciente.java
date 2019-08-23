@@ -2,11 +2,11 @@ package br.com.model;
 
 import java.util.List;
 
-public class Paciente {
+public class Paciente extends Pessoa{
 	
-		int idPaciente;
-		List<EnfermidadePessoal> doenca;
-		List<Entrada> historico;
+		private int idPaciente;
+		private List<EnfermidadePessoal> doenca;
+		private List<Entrada> historico;
 		public int getIdPaciente() {
 			return idPaciente;
 		}
@@ -25,12 +25,11 @@ public class Paciente {
 		public void setHistorico(List<Entrada> historico) {
 			this.historico = historico;
 		}
-		public Paciente(int idPaciente, List<EnfermidadePessoal> doenca, List<Entrada> historico) {
-			super();
+		public Paciente(int idPessoa, String nome, String cpf, int idade, String tipoSanguineo, String sexo,
+				String statusDePessoa, int idPaciente, List<EnfermidadePessoal> doenca, List<Entrada> historico) {
+			super(idPessoa, nome, cpf, idade, tipoSanguineo, sexo, statusDePessoa);
 			this.idPaciente = idPaciente;
 			this.doenca = doenca;
 			this.historico = historico;
 		}
-		
-		
 }

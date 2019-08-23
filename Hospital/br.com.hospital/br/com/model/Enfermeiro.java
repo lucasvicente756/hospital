@@ -2,7 +2,7 @@ package br.com.model;
 
 public class Enfermeiro extends Funcionario{
 	
-	int numeroResgitro;
+	private int numeroResgitro;
 
 	public int getNumeroResgitro() {
 		return numeroResgitro;
@@ -12,10 +12,14 @@ public class Enfermeiro extends Funcionario{
 		this.numeroResgitro = numeroResgitro;
 	}
 
-	public Enfermeiro(int idFuncionario, String login, String senha, String statusDoUsuario, int numeroResgitro) {
-		super(idFuncionario, login, senha, statusDoUsuario);
+	public Enfermeiro(int idPessoa, String nome, String cpf, int idade, String tipoSanguineo, String sexo,
+			String statusDePessoa, int idFuncionario, String login, String senha, String statusDoUsuario,
+			int numeroResgitro) {
+		super(idPessoa, nome, cpf, idade, tipoSanguineo, sexo, statusDePessoa, idFuncionario, login, senha,
+				statusDoUsuario);
 		this.numeroResgitro = numeroResgitro;
 	}
-	
+
+
 	
 }

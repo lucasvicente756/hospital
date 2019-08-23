@@ -7,11 +7,11 @@ import java.util.List;
 
 public class Entrada {
 	
-	int idEntrada;
-	Date dataEntrada;
-	Date dataSaida;
-	String statusDeEntrada;
-	List<Atendimento> SituacaoDoPaciente;
+	private int idEntrada;
+	private Date dataEntrada;
+	private Date dataSaida;
+	private String statusDeEntrada;
+	private List<Atendimento> SituacaoDoPaciente;
 	public int getIdEntrada() {
 		return idEntrada;
 	}

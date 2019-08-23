@@ -1,11 +1,11 @@
 package br.com.model;
 
-public class Funcionario {
+public class Funcionario extends Pessoa{
 	
-	int idFuncionario;
-	String login;
-	String senha;
-	String statusDoUsuario;
+	private int idFuncionario;
+	private String login;
+	private String senha;
+	private String statusDoUsuario;
 	public int getIdFuncionario() {
 		return idFuncionario;
 	}
@@ -30,13 +30,13 @@ public class Funcionario {
 	public void setStatusDoUsuario(String statusDoUsuario) {
 		this.statusDoUsuario = statusDoUsuario;
 	}
-	public Funcionario(int idFuncionario, String login, String senha, String statusDoUsuario) {
-		super();
+	public Funcionario(int idPessoa, String nome, String cpf, int idade, String tipoSanguineo, String sexo,
+			String statusDePessoa, int idFuncionario, String login, String senha, String statusDoUsuario) {
+		super(idPessoa, nome, cpf, idade, tipoSanguineo, sexo, statusDePessoa);
 		this.idFuncionario = idFuncionario;
 		this.login = login;
 		this.senha = senha;
 		this.statusDoUsuario = statusDoUsuario;
 	}
 	
-
 }

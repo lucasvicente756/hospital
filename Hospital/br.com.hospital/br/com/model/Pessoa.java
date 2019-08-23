@@ -2,13 +2,14 @@ package br.com.model;
 
 public class Pessoa {
 
-	int idPessoa;
-	String nome;
-	String cpf;
-	int idade;
-	String tipoSanguineo;
-	String sexo;
-	String statusDePessoa;
+	private int idPessoa;
+	private String nome;
+	private String cpf;
+	private int idade;
+	private String tipoSanguineo;
+	private String sexo;
+	private String statusDePessoa;
+	
 	public int getIdPessoa() {
 		return idPessoa;
 	}
