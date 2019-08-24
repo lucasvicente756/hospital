@@ -9,7 +9,7 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.control.SplitMenuButton;
 import javafx.scene.control.TextField;
 
-public class CadastroPaciente {
+public class Pessoa {
 
     @FXML
     private TextField txtLogin;
