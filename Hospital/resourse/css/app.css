@@ -3,9 +3,9 @@
 	-fx-font-size: 14px;
 	
 }
-TextField{
-	-fx-text-fill;blue;
-	-fx-border-raidus:4PX;
+.TextField{
+	-fx-text-fill:blue;
+	-fx-border-raidus:4px;
 	-fx-font-size: 12px;
 	-fx-cursor:text;
 }
