@@ -26,7 +26,7 @@ public class Main extends Application {
 			stage.setScene(scene);
 			stage.show();
 
-	}	
+	}	 
 	public void openPage(String rota) throws IOException {
 		FXMLLoader loader = new FXMLLoader(getClass().getResource(rota));
 		Parent root = loader.load();
