@@ -7,7 +7,7 @@ public class Atendimento {
 	
 	private int idAtendimento;
 	private String comentarioEnfemeiro;
-	private String comtarioMedico;
+	private String cometarioMedico;
 	private Float peso;
 	private Float altura;
 	private Date data;
@@ -24,11 +24,11 @@ public class Atendimento {
 	public void setComentarioEnfemeiro(String comentarioEnfemeiro) {
 		this.comentarioEnfemeiro = comentarioEnfemeiro;
 	}
-	public String getComtarioMedico() {
-		return comtarioMedico;
+	public String getCometarioMedico() {
+		return cometarioMedico;
 	}
-	public void setComtarioMedico(String comtarioMedico) {
-		this.comtarioMedico = comtarioMedico;
+	public void setCometarioMedico(String comtarioMedico) {
+		this.cometarioMedico = comtarioMedico;
 	}
 	public Float getPeso() {
 		return peso;
@@ -59,7 +59,7 @@ public class Atendimento {
 		super();
 		this.idAtendimento = idAtendimento;
 		this.comentarioEnfemeiro = comentarioEnfemeiro;
-		this.comtarioMedico = comtarioMedico;
+		this.cometarioMedico = comtarioMedico;
 		this.peso = peso;
 		this.altura = altura;
 		this.data = data;
