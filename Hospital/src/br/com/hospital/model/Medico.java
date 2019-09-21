@@ -4,6 +4,7 @@ public class Medico extends Funcionario{
 	
 	private int numeroderesgistro;
 	private String especialdade;
+	
 	public int getNumeroderesgistro() {
 		return numeroderesgistro;
 	}
