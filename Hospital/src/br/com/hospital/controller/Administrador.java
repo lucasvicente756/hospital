@@ -39,7 +39,7 @@ public class Administrador extends Main{
 
     @FXML
     void voltaTelaLogin(ActionEvent event) throws IOException {
-    	openpage(Rotas.LOGIN);
+    	openpage(Rotas.DASH);
     }
 
 }

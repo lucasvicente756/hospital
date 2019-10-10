@@ -24,6 +24,9 @@ public class Dash extends Main{
 
     @FXML
     private Button atendimento;
+    
+    @FXML
+    private Button enfermeiro;
 
     @FXML
     private Button enfermidadePessoal;
@@ -80,6 +83,10 @@ public class Dash extends Main{
     @FXML
     void telaPaciente(ActionEvent event) throws IOException {
     	openpage(Rotas.PACIENTE);
+    }
+    @FXML
+    void telaEnfermeiro(ActionEvent event) throws IOException {
+    	openpage(Rotas.ENFERMEIRO);
     }
 
 }
