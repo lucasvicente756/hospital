@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="277.0" prefWidth="425.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.hospital.controller.Dash">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="277.0" prefWidth="425.0" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/" fx:controller="br.com.hospital.controller.Dash">
    <children>
       <ImageView fitHeight="277.0" fitWidth="425.0">
          <image>
@@ -25,10 +25,11 @@
       <Button fx:id="medico" layoutX="23.0" layoutY="91.0" mnemonicParsing="false" onAction="#telaMedico" text="Cadastrar Medico" />
       <Button fx:id="paciente" layoutX="23.0" layoutY="126.0" mnemonicParsing="false" onAction="#telaPaciente" text="Paciente" />
       <Button fx:id="atendimento" layoutX="23.0" layoutY="158.0" mnemonicParsing="false" onAction="#telaAtendimento" text="Atendimento" />
-      <Button fx:id="enfermidade" layoutX="23.0" layoutY="193.0" mnemonicParsing="false" onAction="#telaEnfermidadePessoal" text="Enfermidade Pessoal" />
+      <Button fx:id="enfermidadePessoal" layoutX="23.0" layoutY="193.0" mnemonicParsing="false" onAction="#telaEnfermidadePessoal" text="Enfermidade Pessoal" />
       <Button fx:id="entradaPaciente" layoutX="23.0" layoutY="225.0" mnemonicParsing="false" onAction="#telaEntradaPaciente" text="Entrada de Pacientes" />
       <Button fx:id="adm" layoutX="126.0" layoutY="25.0" mnemonicParsing="false" onAction="#telaAdm" text="Administração" />
       <Button fx:id="gerente" layoutX="155.0" layoutY="225.0" mnemonicParsing="false" onAction="#telaGerente" text="Gerente" />
       <Button fx:id="enfermeiro" layoutX="89.0" layoutY="126.0" mnemonicParsing="false" onAction="#telaEnfermeiro" text="Enfermeiro" />
+      <Button fx:id="enfermidade" layoutX="113.0" layoutY="158.0" mnemonicParsing="false" onAction="#telaEnfermidade" text="Enfermidade" />
    </children>
 </Pane>
