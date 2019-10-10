@@ -7,27 +7,25 @@ import br.com.hospital.util.Rotas;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
-public class Funcionario extends Main{
+public class EnfermidadePessoalControl extends Main{
 
     @FXML
-    private TextField txtLogin;
-
-    @FXML
-    private TextField txtSenha;
-
-    @FXML
-    private Button btnEntrar;
+    private Button btnSalvar;
 
     @FXML
     private Button btnVoltar;
 
     @FXML
-    private TextField txtStatus;
+    private TextArea txtComentario;
 
     @FXML
-    void EntrarSistema(ActionEvent event) {
+    private TextField txtStatusEnfermidade;
+
+    @FXML
+    void salvarEnfermidade(ActionEvent event) {
 
     }
 

@@ -54,19 +54,19 @@ public class MedicoDAO {
 		List<Medico> medicos = new ArrayList<Medico>();
 		
 		while(rs.next()) {
-			Medico m1 = new Medico();
-			m1.setNome(rs.getString("nome"));
-			m1.setCpf(rs.getString("cpf"));
-			m1.setIdade(rs.getInt("idade"));
-			m1.setTipoSanguineo(rs.getString("tipoSanguineo"));
-			m1.setSexo(rs.getString("sexo"));
-			m1.setStatusPessoa(rs.getString("statusPessoa"));
-			m1.setLogin(rs.getString("login"));
-			m1.setSenha(rs.getString("senha"));
-			m1.setStatusDeUsuario(rs.getString("statusUsuario"));
-			m1.setNumeroderegistro(rs.getInt("numeroRegistro"));
-			m1.setEspecialidade(rs.getString("especialidade"));
-			medicos.add(m1);
+			Medico med = new Medico();
+			med.setNome(rs.getString("nome"));
+			med.setCpf(rs.getString("cpf"));
+			med.setIdade(rs.getInt("idade"));
+			med.setTipoSanguineo(rs.getString("tipoSanguineo"));
+			med.setSexo(rs.getString("sexo"));
+			med.setStatusPessoa(rs.getString("statusPessoa"));
+			med.setLogin(rs.getString("login"));
+			med.setSenha(rs.getString("senha"));
+			med.setStatusDeUsuario(rs.getString("statusUsuario"));
+			med.setNumeroderegistro(rs.getInt("numeroRegistro"));
+			med.setEspecialidade(rs.getString("especialidade"));
+			medicos.add(med);
 		}
 		
 		

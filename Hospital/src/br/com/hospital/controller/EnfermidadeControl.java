@@ -1,16 +1,17 @@
 package br.com.hospital.controller;
 
+import java.awt.TextField;
 import java.io.IOException;
 
 import application.Main;
+import br.com.hospital.DAO.EnfermidadeDAO;
 import br.com.hospital.util.Rotas;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
 
-public class Enfermidade extends Main{
+public class EnfermidadeControl extends Main{
 
     @FXML
     private TextField txtNome;
@@ -29,7 +30,15 @@ public class Enfermidade extends Main{
 
     @FXML
     void EntrarSistema(ActionEvent event) {
-
+    	String tipo = txtTipo.getText();
+    	String nome = txtNome.getText();
+    	String descricao = txtDescricao.getText();
+    	EnfermidadeControl e = new EnfermidadeControl();
+    	EnfermidadeDAO  enf = new EnfermidadeDAO();
+    	e.setTipo(tipo);
+    	e.setNome(nome);
+    	e.setDescricao(descricao);
+        enf.save(e);
     }
 
     @FXML

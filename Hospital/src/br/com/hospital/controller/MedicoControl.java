@@ -3,16 +3,17 @@ package br.com.hospital.controller;
 import java.io.IOException;
 
 import application.Main;
+import br.com.hospital.DAO.MedicoDAO;
 import br.com.hospital.util.Rotas;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
-public class Enfermeiro extends Main{
+public class MedicoControl extends Main{
 
     @FXML
-    private TextField txtNomeEnfermeiro;
+    private TextField txtNome;
 
     @FXML
     private Button btnEntrar;
@@ -48,8 +49,11 @@ public class Enfermeiro extends Main{
     private TextField numRegistro;
 
     @FXML
-    void SalvarEnfermeiro(ActionEvent event) {
+    private TextField txtEspecialidade;
 
+    @FXML
+    void SalvarMedico(ActionEvent event) {
+    	
     }
 
     @FXML

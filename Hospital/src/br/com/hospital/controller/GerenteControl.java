@@ -9,7 +9,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
-public class Gerente extends Main{
+public class GerenteControl extends Main{
 
     @FXML
     private TextField nomeGerente;

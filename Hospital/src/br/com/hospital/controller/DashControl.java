@@ -8,7 +8,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
-public class Dash extends Main{
+public class DashControl extends Main{
 
     @FXML
     private Button voltaTela;

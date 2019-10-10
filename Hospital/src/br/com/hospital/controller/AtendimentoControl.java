@@ -11,7 +11,7 @@ import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
-public class Atendimento extends Main{
+public class AtendimentoControl extends Main{
 
     @FXML
     private Button salvar;

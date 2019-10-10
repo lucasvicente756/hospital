@@ -7,13 +7,12 @@ import br.com.hospital.util.Rotas;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 
-public class Paciente extends Main{
+public class EnfermeiroControl extends Main{
 
     @FXML
-    private TextField txtNomePaciente;
+    private TextField txtNomeEnfermeiro;
 
     @FXML
     private Button btnEntrar;
@@ -22,27 +21,37 @@ public class Paciente extends Main{
     private TextField numCpf;
 
     @FXML
-    private DatePicker nascPaciente;
-
-    @FXML
-    private TextField txtSenho;
+    private TextField txtSexo;
 
     @FXML
     private TextField txtTipoSanguineo;
 
     @FXML
-    private TextField statusPaciente;
+    private TextField statusEnfermeiro;
 
     @FXML
-    private TextField txtDoenca;
+    private TextField txtLogin;
 
     @FXML
-    private TextField txtHistorico;
+    private TextField txtSenha;
 
     @FXML
-    void SalvarPaciente(ActionEvent event) {
+    private Button btnEntrar1;
+
+    @FXML
+    private TextField numIdade;
+
+    @FXML
+    private TextField statusCivil;
+
+    @FXML
+    private TextField numRegistro;
+
+    @FXML
+    void SalvarEnfermeiro(ActionEvent event) {
 
     }
+
     @FXML
     void voltaTela(ActionEvent event) throws IOException {
     	openpage(Rotas.DASH);

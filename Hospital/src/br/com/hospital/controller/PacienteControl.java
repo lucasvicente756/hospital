@@ -10,33 +10,41 @@ import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 
-public class Entrada extends Main{
+public class PacienteControl extends Main{
 
     @FXML
-    private Button btnSalvar;
+    private TextField txtNomePaciente;
 
     @FXML
-    private Button btnVoltar;
+    private Button btnEntrar;
 
     @FXML
-    private DatePicker dateEntrada;
+    private TextField numCpf;
 
     @FXML
-    private DatePicker dateSaida;
+    private DatePicker nascPaciente;
 
     @FXML
-    private TextField StatusEntrada;
+    private TextField txtSexo;
+
+    @FXML
+    private TextField txtTipoSanguineo;
 
     @FXML
     private TextField statusPaciente;
 
     @FXML
-    void salvarEntrada(ActionEvent event) {
-
-    }
+    private TextField txtDoenca;
 
     @FXML
-    void voltarTela(ActionEvent event) throws IOException {
+    private TextField txtHistorico;
+
+    @FXML
+    void SalvarPaciente(ActionEvent event) {
+    	
+    }
+    @FXML
+    void voltaTela(ActionEvent event) throws IOException {
     	openpage(Rotas.DASH);
     }
 

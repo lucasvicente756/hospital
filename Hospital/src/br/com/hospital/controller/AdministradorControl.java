@@ -8,7 +8,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
-public class Administrador extends Main{
+public class AdministradorControl extends Main{
 
     @FXML
     private Button btnVoltar;
