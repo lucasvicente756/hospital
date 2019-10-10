@@ -6,51 +6,44 @@ import java.util.List;
 
 
 public class Entrada {
-	
 	private int idEntrada;
 	private Date dataEntrada;
-	private Date dataSaida;
+	private Date dataDeSaida;
 	private String statusDeEntrada;
-	private List<Atendimento> SituacaoDoPaciente;
-	public int getIdEntrada() {
-		return idEntrada;
-	}
+	private String situacaoDePaciente;
+	
 	public void setIdEntrada(int idEntrada) {
 		this.idEntrada = idEntrada;
 	}
-	public Date getDataEntrada() {
-		return dataEntrada;
+	public int getIdEntrada() {
+		return this. idEntrada;
 	}
+
 	public void setDataEntrada(Date dataEntrada) {
 		this.dataEntrada = dataEntrada;
 	}
-	public Date getDataSaida() {
-		return dataSaida;
+	public Date getDataEntrada() {
+		return this. dataEntrada;
 	}
-	public void setDataSaida(Date dataSaida) {
-		this.dataSaida = dataSaida;
+	
+	public void setDataDeSaida(Date dataDeSaida) {
+		this.dataDeSaida = dataDeSaida;
 	}
-	public String getStatusDeEntrada() {
-		return statusDeEntrada;
+	public Date getDataDeSaida() {
+		return this.dataDeSaida;
 	}
+	
 	public void setStatusDeEntrada(String statusDeEntrada) {
 		this.statusDeEntrada = statusDeEntrada;
 	}
-	public List<Atendimento> getSituacaoDoPaciente() {
-		return SituacaoDoPaciente;
+	public String getStatusDeEntrada() {
+		return this.statusDeEntrada;
 	}
-	public void setSituacaoDoPaciente(List<Atendimento> situacaoDoPaciente) {
-		SituacaoDoPaciente = situacaoDoPaciente;
-	}
-	public Entrada(int idEntrada, Date dataEntrada, Date dataSaida, String statusDeEntrada,
-			List<Atendimento> situacaoDoPaciente) {
-		super();
-		this.idEntrada = idEntrada;
-		this.dataEntrada = dataEntrada;
-		this.dataSaida = dataSaida;
-		this.statusDeEntrada = statusDeEntrada;
-		SituacaoDoPaciente = situacaoDoPaciente;
-	}
-
 	
+	public void setSituacaoDePaciente(String situacaoDePaciente) {
+		this.situacaoDePaciente = situacaoDePaciente;
+	}
+	public String getSituacaoDePaciente() {
+		return this.situacaoDePaciente;
+	}
 }

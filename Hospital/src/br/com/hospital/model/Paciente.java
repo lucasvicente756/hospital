@@ -2,34 +2,30 @@ package br.com.hospital.model;
 
 import java.util.List;
 
-public class Paciente extends Pessoa{
+public class Paciente extends Pessoa {
+	private int idPaciente;
+	private String doenca;
+	private String historico;
 	
-		private int idPaciente;
-		private List<EnfermidadePessoal> doenca;
-		private List<Entrada> historico;
-		public int getIdPaciente() {
-			return idPaciente;
-		}
-		public void setIdPaciente(int idPaciente) {
-			this.idPaciente = idPaciente;
-		}
-		public List<EnfermidadePessoal> getDoenca() {
-			return doenca;
-		}
-		public void setDoenca(List<EnfermidadePessoal> doenca) {
-			this.doenca = doenca;
-		}
-		public List<Entrada> getHistorico() {
-			return historico;
-		}
-		public void setHistorico(List<Entrada> historico) {
-			this.historico = historico;
-		}
-		public Paciente(int idPessoa, String nome, String cpf, int idade, String tipoSanguineo, String sexo,
-				String statusDePessoa, int idPaciente, List<EnfermidadePessoal> doenca, List<Entrada> historico) {
-			super(idPessoa, nome, cpf, idade, tipoSanguineo, sexo, statusDePessoa);
-			this.idPaciente = idPaciente;
-			this.doenca = doenca;
-			this.historico = historico;
-		}
+	public void setIdPaciente(int idPaciente) {
+		this.idPaciente = idPaciente;
+	}
+	public int getIdPaciente() {
+		return this. idPaciente;
+	}
+	
+	public void setDoenca(String  doenca) {
+		this.doenca = doenca;
+	}
+	public String  getDoenca() {
+		return this.doenca;
+	}
+	
+	public void setHistorico(String historico) {
+		this.historico = historico;
+	}
+	public String getHistorico() {
+		return this. historico;
+	}
+	
 }

@@ -1,42 +1,37 @@
 package br.com.hospital.model;
 
-public class Funcionario extends Pessoa{
-	
+public class Funcionario extends Pessoa {
 	private int idFuncionario;
 	private String login;
 	private String senha;
-	private String statusDoUsuario;
-	public int getIdFuncionario() {
-		return idFuncionario;
-	}
+	private String statusDeUsuario;
+	
 	public void setIdFuncionario(int idFuncionario) {
 		this.idFuncionario = idFuncionario;
 	}
-	public String getLogin() {
-		return login;
+	public int getIdFuncionario() {
+		return this. idFuncionario;
 	}
+	
 	public void setLogin(String login) {
 		this.login = login;
 	}
-	public String getSenha() {
-		return senha;
+	public String getLogin() {
+		return this.login;
 	}
+	
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
-	public String getStatusDoUsuario() {
-		return statusDoUsuario;
+	public String getSenha() {
+		return this.senha;
 	}
-	public void setStatusDoUsuario(String statusDoUsuario) {
-		this.statusDoUsuario = statusDoUsuario;
+	
+	public void setStatusDeUsuario(String statusDeUsuario) {
+		this.statusDeUsuario = statusDeUsuario;
 	}
-	public Funcionario(int idPessoa, String nome, String cpf, int idade, String tipoSanguineo, String sexo,
-			String statusDePessoa, int idFuncionario, String login, String senha, String statusDoUsuario) {
-		super(idPessoa, nome, cpf, idade, tipoSanguineo, sexo, statusDePessoa);
-		this.idFuncionario = idFuncionario;
-		this.login = login;
-		this.senha = senha;
-		this.statusDoUsuario = statusDoUsuario;
+	public String getStatusDeUsuario() {
+		return this.statusDeUsuario;
 	}
 	
 }
