@@ -30,16 +30,9 @@ public class EnfermidadeControl extends Main{
 
     @FXML
     void EntrarSistema(ActionEvent event) {
-    	String tipo = txtTipo.getText();
-    	String nome = txtNome.getText();
-    	String descricao = txtDescricao.getText();
-    	EnfermidadeControl e = new EnfermidadeControl();
-    	EnfermidadeDAO  enf = new EnfermidadeDAO();
-    	e.setTipo(tipo);
-    	e.setNome(nome);
-    	e.setDescricao(descricao);
-        enf.save(e);
     }
+   
+
 
     @FXML
     void voltaTela(ActionEvent event) throws IOException {
