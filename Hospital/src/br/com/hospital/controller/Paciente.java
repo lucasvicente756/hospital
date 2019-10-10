@@ -1,25 +1,51 @@
 package br.com.hospital.controller;
 
+import java.io.IOException;
 
+import application.Main;
+import br.com.hospital.util.Rotas;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.SplitMenuButton;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.TextField;
 
-public class Paciente {
-
-    @FXML
-    private Button btnEnviar;
+public class Paciente extends Main{
 
     @FXML
-    private Button btnAddentrada;
+    private TextField txtNomePaciente;
 
     @FXML
-    private SplitMenuButton listEnfermidade;
+    private Button btnEntrar;
 
     @FXML
-    void enviar(ActionEvent event) {
+    private TextField numCpf;
 
+    @FXML
+    private DatePicker nascPaciente;
+
+    @FXML
+    private TextField txtSenho;
+
+    @FXML
+    private TextField txtTipoSanguineo;
+
+    @FXML
+    private TextField statusPaciente;
+
+    @FXML
+    private TextField txtDoenca;
+
+    @FXML
+    private TextField txtHistorico;
+
+    @FXML
+    void SalvarPaciente(ActionEvent event) {
+
+    }
+    @FXML
+    void voltaTela(ActionEvent event) throws IOException {
+    	openpage(Rotas.DASH);
     }
 
 }

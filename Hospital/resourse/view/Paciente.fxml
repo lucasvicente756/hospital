@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="290.0" prefWidth="424.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.hospital.controller.Paciente">
+   <children>
+      <ImageView fitHeight="296.0" fitWidth="437.0" layoutX="-1.0" layoutY="-5.0">
+         <image>
+            <Image url="@../depositphotos_127565448-stock-photo-blue-watercolor-background-with-visible.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtNomePaciente" layoutX="27.0" layoutY="70.0" />
+      <Button fx:id="btnEntrar" layoutX="92.0" layoutY="243.0" mnemonicParsing="false" onAction="#SalvarPaciente" text="Salvar" />
+      <Text layoutX="27.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome Completo" wrappingWidth="100.443359375" />
+      <Text layoutX="27.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Nacimento" wrappingWidth="112.443359375" />
+      <Text layoutX="14.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro Paciente" wrappingWidth="203.443359375">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <TextField fx:id="numCpf" layoutX="202.0" layoutY="70.0" />
+      <Text layoutX="202.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cpf" wrappingWidth="36.443359375" />
+      <Text layoutX="26.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Historico" wrappingWidth="76.0" />
+      <DatePicker fx:id="nascPaciente" layoutX="28.0" layoutY="113.0" prefHeight="25.0" prefWidth="149.0" />
+      <Text layoutX="27.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doença" wrappingWidth="47.376953125" />
+      <Text layoutX="202.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status Paciente" wrappingWidth="112.443359375" />
+      <TextField fx:id="txtSenho" layoutX="202.0" layoutY="159.0" />
+      <Text layoutX="202.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sexo" wrappingWidth="36.443359375" />
+      <TextField fx:id="txtTipoSanguineo" layoutX="202.0" layoutY="202.0" />
+      <Text layoutX="202.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo Sanguineo" wrappingWidth="100.443359375" />
+      <TextField fx:id="statusPaciente" layoutX="202.0" layoutY="119.0" />
+      <TextField fx:id="txtDoenca" layoutX="28.0" layoutY="159.0" />
+      <TextField fx:id="txtHistorico" layoutX="28.0" layoutY="202.0" />
+      <Button fx:id="btnEntrar1" layoutX="28.0" layoutY="243.0" mnemonicParsing="false" onAction="#voltaTela" text="Voltar" />
+   </children>
+</Pane>
