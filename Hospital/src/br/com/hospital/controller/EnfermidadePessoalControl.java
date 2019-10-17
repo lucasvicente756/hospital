@@ -31,7 +31,6 @@ public class EnfermidadePessoalControl extends Main{
     void salvarEnfermidade(ActionEvent event) throws SQLException, IOException {
     	String statusEnfermidade = txtStatusEnfermidade.getText();
     	String comentario = txtComentario.getText();
-    	
     	EnfermidadePessoal e = new EnfermidadePessoal();
     	EnfermidadePessoalDAO ep = new EnfermidadePessoalDAO();
     	e.setStatusDeEnfermidade(statusEnfermidade);

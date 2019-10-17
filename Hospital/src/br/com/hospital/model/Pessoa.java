@@ -4,7 +4,7 @@ public class Pessoa {
 	private int idPessoa;
 	private String nome;
 	private String cpf;
-	private int idade;
+	private String idade;
 	private String tipoSanguineo;
 	private String sexo;
 	private String statusPessoa;
@@ -30,10 +30,10 @@ public class Pessoa {
 		return this.cpf;
 	}
 	
-	public void setIdade(int idade) {
+	public void setIdade(String idade) {
 		this.idade = idade;
 	}
-	public int getIdade() {
+	public String getIdade() {
 		return this.idade;
 	}
 	

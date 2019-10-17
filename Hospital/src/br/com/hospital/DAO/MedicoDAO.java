@@ -20,7 +20,7 @@ public class MedicoDAO {
 		stmt.setInt(1,m.getIdFuncionario());
 		stmt.setString(2,m.getNome());
 		stmt.setString(3, m.getCpf());
-		stmt.setInt(4, m.getIdade());
+		stmt.setString(4, m.getIdade());
 		stmt.setString(5, m.getTipoSanguineo());
 		stmt.setString(6, m.getSexo());
 		stmt.setString(7, m.getStatusPessoa());

@@ -57,7 +57,7 @@ public class MedicoControl extends Main{
     void SalvarMedico(ActionEvent event) throws SQLException, IOException {
     	String nome = txtNome.getText();
     	String cpf = numCpf.getText();
-    	int idade = Integer.parseInt(numIdade.getText());
+    	String idade = numIdade.getText();
     	String tipoSanguineo = txtTipoSanguineo.getText();
     	String sexo = txtSexo.getText();
     	String statusPessoa = statusCivil.getText();

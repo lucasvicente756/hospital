@@ -1,8 +1,11 @@
 package br.com.hospital.controller;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 import application.Main;
+import br.com.hospital.DAO.FuncionarioDAO;
+import br.com.hospital.model.Funcionario;
 import br.com.hospital.util.Rotas;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -27,8 +30,8 @@ public class FuncionarioControl extends Main{
     private TextField txtStatus;
 
     @FXML
-    void EntrarSistema(ActionEvent event) {
-
+    void EntrarSistema(ActionEvent event) throws SQLException, IOException  {
+    	 openpage(Rotas.DASH);
     }
 
     @FXML
