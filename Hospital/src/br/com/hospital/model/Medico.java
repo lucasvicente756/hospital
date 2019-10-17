@@ -2,22 +2,19 @@ package br.com.hospital.model;
 
 public class Medico extends Funcionario {
 	
-	private int numeroderegistro;
+	private int numerodeRegistro;
 	private String especialidade;
 	
-	public void setNumeroderegistro(int numeroderegistro) {
-		this.numeroderegistro = numeroderegistro;
+	public int getNumerodeRegistro() {
+		return numerodeRegistro;
 	}
-	public int getNumeroderegistro() {
-		return this.numeroderegistro;
+	public void setNumerodeRegistro(int numerodeRegistro) {
+		this.numerodeRegistro = numerodeRegistro;
 	}
-	
+	public String getEspecialidade() {
+		return especialidade;
+	}
 	public void setEspecialidade(String especialidade) {
 		this.especialidade = especialidade;
 	}
-	public String getEspecialidade() {
-		return this.especialidade;
-	}
-	
-	
 }

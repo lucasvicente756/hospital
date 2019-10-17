@@ -2,12 +2,12 @@ package br.com.hospital.model;
 
 public class Enfermeiro extends Funcionario {
 
-	private int numeroderegistro;
+	private int numerodeRegistro;
 
-	public void setNumeroderegistro(int numeroderegistro) {
-		this.numeroderegistro = numeroderegistro;
+	public void setNumeroderegistro(int numerodeRegistro) {
+		this.numerodeRegistro = numerodeRegistro;
 	}
 	public int getNumeroderegistro() {
-		return this. numeroderegistro;
+		return this. numerodeRegistro;
 	}
 }

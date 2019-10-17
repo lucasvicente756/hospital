@@ -17,7 +17,7 @@ public class FuncionarioDAO {
 			stmt.setInt(1, f.getIdFuncionario());
 			stmt.setString(2,f.getLogin());
 			stmt.setString(3,f.getSenha());
-			stmt.setString(4,f.getStatusDeUsuario());
+			stmt.setString(4,f.getStatusUsuario());
 			stmt.execute();
 }
 }

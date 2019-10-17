@@ -13,8 +13,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-
-
 public class Main extends Application{
 	
 	static Stage stageAtual;
@@ -44,6 +42,7 @@ public class Main extends Application{
 			stageAtual.setScene(scene);
 			stageAtual.show();
 	}
+	
 	public static void main (String[] args) throws SQLException {
 		launch(args);
 	}

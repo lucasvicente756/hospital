@@ -76,9 +76,9 @@ public class MedicoControl extends Main{
     	m.setStatusPessoa(statusPessoa);
     	m.setLogin(login);
     	m.setSenha(senha);
-    	m.setStatusDeUsuario(statusUsuario);
+    	m.setStatusUsuario(statusUsuario);
 		m.setEspecialidade(especialidade);
-		m.setNumeroderegistro(numeroRegistro);
+		m.setNumerodeRegistro(numeroRegistro);
 		mDAO.save(m);
 		 openpage(Rotas.DASH);
     }

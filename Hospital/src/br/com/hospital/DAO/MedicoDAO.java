@@ -26,8 +26,8 @@ public class MedicoDAO {
 		stmt.setString(7, m.getStatusPessoa());
 		stmt.setString(8, m.getLogin());
 		stmt.setString(9, m.getSenha());
-		stmt.setString(10, m.getStatusDeUsuario());
-		stmt.setInt(11, m.getNumeroderegistro());
+		stmt.setString(10, m.getStatusUsuario());
+		stmt.setInt(11, m.getNumerodeRegistro());
 		stmt.setString(12, m.getEspecialidade());
 		stmt.execute();
 		

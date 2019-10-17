@@ -13,7 +13,7 @@ public class Conexao {
 	 String pwd = "";
 	 String driverName = "com.mysql.jdbc.Driver";
 	 String server ="localhost";
-	 String bdName = "hospitalFX";
+	 String bdName = "hospitallucas";
 		 String url ="jdbc:mysql://" + server + ":3306/" + bdName;   
 	
 public Connection getConnection() {
@@ -21,9 +21,9 @@ public Connection getConnection() {
 		Class.forName(this.driverName);
 		this.conn = DriverManager.getConnection(url,user,pwd);
 		if(conn != null) {
-			this.status = "STATUS ---> conectado ";
+			this.status = "DADOS FORAM SALVOS!";
 		}else	{
-			this.status="STATUS ---> nao conectado";
+			this.status="Banco não esta conectado";
 		}
 		
 		
