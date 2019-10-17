@@ -2,7 +2,6 @@ package br.com.hospital.controller;
 
 import java.io.IOException;
 import java.sql.SQLException;
-
 import application.Main;
 import br.com.hospital.DAO.FuncionarioDAO;
 import br.com.hospital.model.Funcionario;
@@ -30,8 +29,17 @@ public class FuncionarioControl extends Main{
     private TextField txtStatus;
 
     @FXML
-    void EntrarSistema(ActionEvent event) throws SQLException, IOException  {
-    	 openpage(Rotas.DASH);
+    void EntrarSistema(ActionEvent event) throws SQLException, IOException {
+    	Funcionario f = new Funcionario(); 
+		FuncionarioDAO fDAO = new FuncionarioDAO();
+		f.setLogin(txtLogin.getText());
+		f.setSenha(txtSenha.getText());
+		f.setStatusUsuario(txtStatus.getText());
+		System.out.println(txtLogin.getText());
+		System.out.println(txtSenha.getText());
+		System.out.println(txtStatus.getText());
+		fDAO.save(f);
+		
     }
 
     @FXML

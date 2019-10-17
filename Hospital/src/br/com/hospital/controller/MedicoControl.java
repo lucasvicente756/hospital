@@ -54,33 +54,22 @@ public class MedicoControl extends Main{
     private TextField txtEspecialidade;
 
     @FXML
-    void SalvarMedico(ActionEvent event) throws SQLException, IOException {
-    	String nome = txtNome.getText();
-    	String cpf = numCpf.getText();
-    	String idade = numIdade.getText();
-    	String tipoSanguineo = txtTipoSanguineo.getText();
-    	String sexo = txtSexo.getText();
-    	String statusPessoa = statusCivil.getText();
-    	String login = txtLogin.getText();
-    	String senha = txtSenha.getText();
-    	String statusUsuario = statusEnfermeiro.getText();
-    	int numeroRegistro = Integer.parseInt(numRegistro.getText());
-    	String especialidade = txtEspecialidade.getText();
+    void salvarMedico(ActionEvent event) throws SQLException, IOException {
     	Medico m = new Medico(); 
 		MedicoDAO  mDAO = new MedicoDAO();
-		m.setNome(nome);
-    	m.setCpf(cpf);
-    	m.setIdade(idade);
-    	m.setTipoSanguineo(tipoSanguineo);
-    	m.setSexo(sexo);
-    	m.setStatusPessoa(statusPessoa);
-    	m.setLogin(login);
-    	m.setSenha(senha);
-    	m.setStatusUsuario(statusUsuario);
-		m.setEspecialidade(especialidade);
-		m.setNumerodeRegistro(numeroRegistro);
+		m.setNome(txtNome.getText());
+    	m.setCpf(numCpf.getText());
+    	m.setIdade(numIdade.getText());
+    	m.setTipoSanguineo(txtTipoSanguineo.getText());
+    	m.setSexo(txtSexo.getText());
+    	m.setStatusPessoa(statusEnfermeiro.getText());
+    	m.setLogin(txtLogin.getText());
+    	m.setSenha(txtSenha.getText());
+    	m.setStatusUsuario(statusCivil.getText());
+		m.setEspecialidade(txtEspecialidade.getText());
+		m.setNumerodeRegistro(Integer.parseInt(numRegistro.getText()));
 		mDAO.save(m);
-		 openpage(Rotas.DASH);
+        openpage(Rotas.DASH);
     }
 
     @FXML

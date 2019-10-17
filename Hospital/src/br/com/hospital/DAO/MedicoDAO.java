@@ -30,6 +30,5 @@ public class MedicoDAO {
 		stmt.setInt(11, m.getNumerodeRegistro());
 		stmt.setString(12, m.getEspecialidade());
 		stmt.execute();
-		
 	}
 }
