@@ -7,10 +7,10 @@ cpf varchar(50),
 idade int,
 tipoSanguineo varchar(50),
 sexo varchar(50),
-statusPessoa varchar(200), 
+statusPessoa varchar(300), 
 login varchar(50),
 senha varchar(50),
-statusUsuario varchar(200),
+statusUsuario varchar(300),
 numeroRegistro int,
 especialidade varchar(50),
 constraint PK_Medico primary key(id)
@@ -23,10 +23,10 @@ cpf varchar(50) ,
 idade int ,
 tipoSanguineo varchar(50) ,
 sexo varchar(50) ,
-statusPessoa varchar(200), 
+statusPessoa varchar(300), 
 login varchar(50) ,
 senha varchar(50) ,
-statusUsuario varchar(200),
+statusUsuario varchar(300),
 numeroRegistro varchar(50),
 constraint PK_Enfermeiro primary key(id)
 );
@@ -38,10 +38,10 @@ cpf varchar(50) ,
 idade int ,
 tipoSanguineo varchar(50) ,
 sexo varchar(50) ,
-statusPessoa varchar(200), 
+statusPessoa varchar(300), 
 login varchar(50) ,
 senha varchar(50) ,
-statusUsuario varchar(200),
+statusUsuario varchar(300),
 cargo varchar(50),
 constraint PK_Gerente primary key(id)
 );
@@ -53,14 +53,14 @@ cpf varchar(50) ,
 idade int ,
 tipoSanguineo varchar(50) ,
 sexo varchar(50) ,
-statusPessoa varchar(200) ,
-doenca varchar (300) ,
-historico varchar (300),
+statusPessoa varchar(300) ,
+doenca varchar (100) ,
+historico varchar (500),
 constraint PK_Paciente primary key(id));
 
 create table EnfermidadePessoal (
 id int AUTO_INCREMENT,
-comentario varchar(100) ,
+comentario varchar(300) ,
 statusEnfermeiro varchar(100) ,
 constraint PK_EnfermidadePessoal primary key (id)
 );
@@ -69,7 +69,7 @@ create table Enfermidade(
 id int AUTO_INCREMENT,
 nome varchar(50) ,
 tipo varchar(50) ,
-descricao varchar(150) ,
+descricao varchar(400) ,
 constraint PK_Enfermidade primary key (id)
 );
 
@@ -78,7 +78,7 @@ id int AUTO_INCREMENT,
 dataEntrada date ,
 dataSaida date ,
 statusEntrada varchar(50) ,
-situacaoPaciente varchar(300),
+situacaoPaciente varchar(400),
 constraint PK_Entrada primary key (id)
 );
 
@@ -89,7 +89,7 @@ comentarioMedico varchar(100) ,
 altura float ,
 peso float ,
 datanasc date ,
-doenca varchar(300) ,
+doenca varchar(100) ,
 constraint PK_Atendimento primary key (id)
 );
 
