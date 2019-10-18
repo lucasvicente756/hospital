@@ -1,6 +1,7 @@
 package br.com.hospital.model;
 
 import java.sql.Date;
+import java.time.LocalDate;
 import java.util.List;
 
 public class Atendimento {
@@ -8,7 +9,7 @@ public class Atendimento {
 	private String comentarioEnfermeiro;
 	private String comentarioMedico;
 	private String doenca;
-	private Date data;
+	private LocalDate data;
 	private float peso;
 	private float altura;
 	
@@ -42,10 +43,10 @@ public class Atendimento {
 	public float getAltura() {
 		return this.altura;
 	}
-	public void setData(Date data) {
+	public void setData(LocalDate data) {
 		this.data = data;
 	}
-	public Date getData() {
+	public LocalDate getData() {
 		return this.data;
 	}
 	public void setDoenca(String  doenca) {

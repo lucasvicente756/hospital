@@ -2,13 +2,14 @@ package br.com.hospital.model;
 
 
 import java.sql.Date;
+import java.time.LocalDate;
 import java.util.List;
 
 
 public class Entrada {
 	private int idEntrada;
-	private Date dataEntrada;
-	private Date dataSaida;
+	private LocalDate  dataEntrada;
+	private LocalDate  dataSaida;
 	private String statusEntrada;
 	private String situacaoPaciente;
 	public int getIdEntrada() {
@@ -17,16 +18,16 @@ public class Entrada {
 	public void setIdEntrada(int idEntrada) {
 		this.idEntrada = idEntrada;
 	}
-	public Date getDataEntrada() {
+	public LocalDate getDataEntrada() {
 		return dataEntrada;
 	}
-	public void setDataEntrada(Date dataEntrada) {
+	public void setDataEntrada(LocalDate dataEntrada) {
 		this.dataEntrada = dataEntrada;
 	}
-	public Date getDataSaida() {
+	public LocalDate getDataSaida() {
 		return dataSaida;
 	}
-	public void setDataSaida(Date dataSaida) {
+	public void setDataSaida(LocalDate dataSaida) {
 		this.dataSaida = dataSaida;
 	}
 	public String getStatusEntrada() {

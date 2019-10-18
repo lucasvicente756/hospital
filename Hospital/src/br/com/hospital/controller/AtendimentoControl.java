@@ -1,8 +1,12 @@
 package br.com.hospital.controller;
 
 import java.io.IOException;
+import java.sql.SQLException;
+import java.time.LocalDate;
 
 import application.Main;
+import br.com.hospital.DAO.AtendimentoDAO;
+import br.com.hospital.model.Atendimento;
 import br.com.hospital.util.Rotas;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -17,7 +21,7 @@ public class AtendimentoControl extends Main{
     private Button salvar;
 
     @FXML
-    private DatePicker Data;
+    private DatePicker txtData;
 
     @FXML
     private TextField numAltura;
@@ -38,8 +42,17 @@ public class AtendimentoControl extends Main{
     private TextField numPeso;
 
     @FXML
-    void salvarDados(ActionEvent event) {
-    	
+    void salvarDados(ActionEvent event) throws SQLException, IOException {
+    	Atendimento a = new Atendimento(); 
+    	AtendimentoDAO  aDAO = new AtendimentoDAO();
+    	a.setComentarioEnfermeiro(txtComentarioEnfermeiro.getText());
+		a.setComentarioMedico(txtComentarioMedico.getText());
+		a.setAltura(Float.parseFloat(numAltura.getText()));
+    	a.setPeso(Float.parseFloat(numPeso.getText()));
+    	a.setData(txtData.getValue());
+    	a.setDoenca(txtDoenca.getText());
+		aDAO.save(a);
+        openpage(Rotas.DASH);
     }
 
     @FXML

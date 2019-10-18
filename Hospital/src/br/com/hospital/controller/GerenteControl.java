@@ -1,8 +1,10 @@
 package br.com.hospital.controller;
 
 import java.io.IOException;
-
+import java.sql.SQLException;
 import application.Main;
+import br.com.hospital.DAO.GerenteDAO;
+import br.com.hospital.model.Gerente;
 import br.com.hospital.util.Rotas;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -48,8 +50,21 @@ public class GerenteControl extends Main{
     private TextField txtCargo;
 
     @FXML
-    void SalvarGerente(ActionEvent event) {
-
+    void SalvarGerente(ActionEvent event) throws IOException, SQLException {
+    	Gerente g = new Gerente(); 
+    	GerenteDAO  gDAO = new GerenteDAO();
+		g.setNome(nomeGerente.getText());
+    	g.setCpf(numCpf.getText());
+    	g.setIdade(numIdade.getText());
+    	g.setTipoSanguineo(txtTipoSanguineo.getText());
+    	g.setSexo(txtSexo.getText());
+    	g.setStatusPessoa(statusFuncionario.getText());
+    	g.setLogin(txtLogin.getText());
+    	g.setSenha(txtSenha.getText());
+    	g.setStatusUsuario(statusCivil.getText());
+		g.setCargo(txtCargo.getText());
+		gDAO.save(g);
+		openpage(Rotas.DASH);
     }
 
     @FXML
