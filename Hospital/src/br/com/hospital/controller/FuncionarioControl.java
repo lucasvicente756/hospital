@@ -35,10 +35,8 @@ public class FuncionarioControl extends Main{
 		f.setLogin(txtLogin.getText());
 		f.setSenha(txtSenha.getText());
 		f.setStatusUsuario(txtStatus.getText());
-		System.out.println(txtLogin.getText());
-		System.out.println(txtSenha.getText());
-		System.out.println(txtStatus.getText());
 		fDAO.save(f);
+		openpage(Rotas.DASH);
 		
     }
 

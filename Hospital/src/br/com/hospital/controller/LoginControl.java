@@ -23,9 +23,16 @@ public class LoginControl extends Main{
 
     @FXML
     void EntrarSistema(ActionEvent event) throws IOException {
-        String Login = txtLogin.getText();
-    	String Senha = txtSenha.getText();
-    	openpage(Rotas.DASH);
+    	String login = txtLogin.getText();
+    	String senha = txtSenha.getText();
+       if(login.equals("lucas") && senha.equals("123")) {
+    	   openpage(Rotas.DASH);
+    	}else {
+    		System.out.println("Login invalido");
+    		txtLogin.setText("");
+    		txtSenha.setText("");
+    	}
+    	
     }
 }
 
