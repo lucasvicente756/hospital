@@ -16,8 +16,8 @@ public class AtendimentoDAO {
 		stmt.setInt(1,a.getIdAtendimento());
 		stmt.setString(2,a.getComentarioEnfermeiro());
 		stmt.setString(3, a.getComentarioMedico());
-		stmt.setFloat(4, a.getAltura());
-		stmt.setFloat(5, a.getPeso());
+		stmt.setString(4, a.getAltura());
+		stmt.setString(5, a.getPeso());
 		stmt.setDate(6, java.sql.Date.valueOf(a.getData()));
 		stmt.setString(7, a.getDoenca());
 		stmt.execute();

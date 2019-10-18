@@ -47,8 +47,8 @@ public class AtendimentoControl extends Main{
     	AtendimentoDAO  aDAO = new AtendimentoDAO();
     	a.setComentarioEnfermeiro(txtComentarioEnfermeiro.getText());
 		a.setComentarioMedico(txtComentarioMedico.getText());
-		a.setAltura(Float.parseFloat(numAltura.getText()));
-    	a.setPeso(Float.parseFloat(numPeso.getText()));
+		a.setAltura(numAltura.getText());
+    	a.setPeso(numPeso.getText());
     	a.setData(txtData.getValue());
     	a.setDoenca(txtDoenca.getText());
 		aDAO.save(a);

@@ -10,8 +10,8 @@ public class Atendimento {
 	private String comentarioMedico;
 	private String doenca;
 	private LocalDate data;
-	private float peso;
-	private float altura;
+	private String peso;
+	private String altura;
 	
 	public void setIdAtendimento(int idAtendimento) {
 		this.idAtendimento = idAtendimento;
@@ -31,16 +31,16 @@ public class Atendimento {
 	public String getComentarioMedico() {
 		return this.comentarioMedico;
 	}
-	public void setPeso(float peso) {
+	public void setPeso(String peso) {
 		this.peso = peso;
 	}
-	public float getPeso() {
+	public String getPeso() {
 		return this.peso;
 	}
-	public void setAltura(float altura) {
+	public void setAltura(String altura) {
 		this.altura = altura;
 	}
-	public float getAltura() {
+	public String getAltura() {
 		return this.altura;
 	}
 	public void setData(LocalDate data) {
