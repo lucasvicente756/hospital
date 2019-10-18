@@ -1,8 +1,13 @@
 package br.com.hospital.controller;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 import application.Main;
+import br.com.hospital.DAO.AtendimentoDAO;
+import br.com.hospital.DAO.EntradaDAO;
+import br.com.hospital.model.Atendimento;
+import br.com.hospital.model.Entrada;
 import br.com.hospital.util.Rotas;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -31,8 +36,15 @@ public class EntradaControl extends Main{
     private TextField statusPaciente;
 
     @FXML
-    void salvarEntrada(ActionEvent event) {
-
+    void salvarEntrada(ActionEvent event) throws SQLException, IOException {
+    	Entrada e = new Entrada(); 
+    	EntradaDAO  eDAO = new EntradaDAO();
+    	e.setDataEntrada(dateEntrada.getValue());
+    	e.setDataSaida(dateSaida.getValue());
+    	e.setSituacaoPaciente(StatusEntrada.getText());
+    	e.setStatusEntrada(statusPaciente.getText());
+		eDAO.save(e);
+        openpage(Rotas.DASH);
     }
 
     @FXML

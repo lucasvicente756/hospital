@@ -12,11 +12,13 @@ public class EntradaDAO {
 		Conexao conn = new  Conexao();
 		Connection conexao =  conn.getConnection();
 		System.out.println(conn.getStatus());
-		String sqlInsere = "INSERT INTO Entrada VALUES(?,?,?,?,?,?,?)";
+		String sqlInsere = "INSERT INTO Entrada VALUES(?,?,?,?,?)";
 		PreparedStatement stmt = conexao.prepareStatement(sqlInsere);
-		stmt.setDate(1, java.sql.Date.valueOf(e.getDataEntrada()));
-		stmt.setDate(1, java.sql.Date.valueOf(e.getDataSaida()));
-		stmt.setString(2, e.getDoenca());
+		stmt.setInt(1,e.getIdEntrada());
+		stmt.setDate(2, java.sql.Date.valueOf(e.getDataEntrada()));
+		stmt.setDate(3, java.sql.Date.valueOf(e.getDataSaida()));
+		stmt.setString(4, e.getSituacaoPaciente());
+		stmt.setString(5, e.getStatusEntrada());
 		stmt.execute();
 	}
 }
