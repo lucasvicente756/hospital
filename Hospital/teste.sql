@@ -86,9 +86,9 @@ create table Atendimento (
 id int AUTO_INCREMENT,
 comentarioEnfermeiro varchar(100) ,
 comentarioMedico varchar(100) ,
-altura float ,
-peso float ,
-datanasc date ,
+altura varchar(50),
+peso varchar(50),
+datanasc varchar(50),
 doenca varchar(100) ,
 constraint PK_Atendimento primary key (id)
 );
@@ -100,6 +100,12 @@ senha varchar(10) ,
 statusUsuario varchar(50) ,
 constraint PK_Funcionario primary key (id));
 
+select * from paciente;
+select * from entrada;
+select * from atendimento;
+select * from gerente;
+select * from enfermeiro;
 select * from funcionario;
+select * from medico;
 select * from enfermidade;
 select * from enfermidadePessoal;
