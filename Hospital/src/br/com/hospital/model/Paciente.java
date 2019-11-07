@@ -3,9 +3,9 @@ package br.com.hospital.model;
 import java.util.List;
 
 public class Paciente extends Pessoa {
-	private int idPaciente;
-	private String doenca;
-	private String historico;
+	private int idPaciente ;
+	private String doenca = "";
+	private String historico = "";
 	
 	public void setIdPaciente(int idPaciente) {
 		this.idPaciente = idPaciente;

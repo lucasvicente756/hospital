@@ -10,8 +10,8 @@ public class Entrada {
 	private int idEntrada;
 	private LocalDate  dataEntrada;
 	private LocalDate  dataSaida;
-	private String statusEntrada;
-	private String situacaoPaciente;
+	private String statusEntrada = "";
+	private String situacaoPaciente = "";
 	public int getIdEntrada() {
 		return idEntrada;
 	}

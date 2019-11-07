@@ -2,9 +2,9 @@ package br.com.hospital.model;
 
 public class Funcionario extends Pessoa {
 	private int idFuncionario;
-	private String login;
-	private String senha;
-	private String statusUsuario;
+	private String login = "";
+	private String senha = "";
+	private String statusUsuario = "";
 	public int getIdFuncionario() {
 		return idFuncionario;
 	}

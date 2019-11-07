@@ -2,8 +2,8 @@ package br.com.hospital.model;
 
 public class EnfermidadePessoal {
 	private int idenfermidadePessoal;
-	private String  comentario;
-	private String  statusdeEnfermidade;
+	private String  comentario = "";
+	private String  statusdeEnfermidade = "";
 	
 	public void setIdEnfermidadePessoal(int idenfermidadePessoal) {
 		this.idenfermidadePessoal = idenfermidadePessoal;

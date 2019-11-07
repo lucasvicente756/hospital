@@ -3,7 +3,7 @@ package br.com.hospital.model;
 public class Medico extends Funcionario {
 	
 	private int numerodeRegistro;
-	private String especialidade;
+	private String especialidade = "";
 	
 	public int getNumerodeRegistro() {
 		return numerodeRegistro;

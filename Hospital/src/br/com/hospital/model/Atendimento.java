@@ -6,12 +6,12 @@ import java.util.List;
 
 public class Atendimento {
 	private int idAtendimento;
-	private String comentarioEnfermeiro;
-	private String comentarioMedico;
-	private String doenca;
+	private String comentarioEnfermeiro = "";
+	private String comentarioMedico = "";
+	private String doenca = "";
 	private LocalDate data;
-	private String peso;
-	private String altura;
+	private String peso = "";
+	private String altura = "";
 	
 	public void setIdAtendimento(int idAtendimento) {
 		this.idAtendimento = idAtendimento;

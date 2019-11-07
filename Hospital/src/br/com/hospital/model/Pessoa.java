@@ -2,12 +2,12 @@ package br.com.hospital.model;
 
 public class Pessoa {
 	private int idPessoa;
-	private String nome;
-	private String cpf;
-	private String idade;
-	private String tipoSanguineo;
-	private String sexo;
-	private String statusPessoa;
+	private String nome ="";
+	private String cpf = "";
+	private String idade = "";
+	private String tipoSanguineo = "";
+	private String sexo = "";
+	private String statusPessoa = "";
 	
 	public void setIdPessoa(int idPessoa) {
 		this.idPessoa = idPessoa;
