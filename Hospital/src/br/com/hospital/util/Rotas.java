@@ -14,5 +14,6 @@ public class Rotas {
 	public static String PESSOA = "/view/Pessoa.fxml";
 	public static String LOGIN = "/view/Login.fxml";
 	public static String DASH = "/view/Dash.fxml";
+	public static String SELECT = "/view/Select.fxml";
 }
 

@@ -28,8 +28,8 @@ public class AdministradorControl extends Main{
     }
 
     @FXML
-    void alteraDados(ActionEvent event) {
-
+    void alteraDados(ActionEvent event) throws IOException {
+    	openpage(Rotas.SELECT);
     }
 
     @FXML

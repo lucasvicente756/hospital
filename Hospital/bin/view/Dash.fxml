@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="277.0" prefWidth="425.0" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/" fx:controller="br.com.hospital.controller.DashControl">
+   <children>
+      <ImageView fitHeight="277.0" fitWidth="425.0">
+         <image>
+            <Image url="@../depositphotos_127565448-stock-photo-blue-watercolor-background-with-visible.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="229.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SISTEMA HOSPITAL" wrappingWidth="187.443359375">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="267.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="By: Lucas Vicente Rodrigues" wrappingWidth="173.5078125" />
+      <Button fx:id="voltaTela" layoutX="23.0" layoutY="25.0" mnemonicParsing="false" onAction="#VoltaLogin" text="Tela de Login" />
+      <Button fx:id="funcionario" layoutX="23.0" layoutY="58.0" mnemonicParsing="false" onAction="#telaFuncionario" text="Cadastrar Funcionario" />
+      <Button fx:id="medico" layoutX="23.0" layoutY="91.0" mnemonicParsing="false" onAction="#telaMedico" text="Cadastrar Medico" />
+      <Button fx:id="paciente" layoutX="23.0" layoutY="126.0" mnemonicParsing="false" onAction="#telaPaciente" text="Paciente" />
+      <Button fx:id="atendimento" layoutX="23.0" layoutY="158.0" mnemonicParsing="false" onAction="#telaAtendimento" text="Atendimento" />
+      <Button fx:id="enfermidadePessoal" layoutX="23.0" layoutY="193.0" mnemonicParsing="false" onAction="#telaEnfermidadePessoal" text="Enfermidade Pessoal" />
+      <Button fx:id="entradaPaciente" layoutX="23.0" layoutY="225.0" mnemonicParsing="false" onAction="#telaEntradaPaciente" text="Entrada de Pacientes" />
+      <Button fx:id="adm" layoutX="126.0" layoutY="25.0" mnemonicParsing="false" onAction="#telaAdm" text="Administração" />
+      <Button fx:id="gerente" layoutX="155.0" layoutY="225.0" mnemonicParsing="false" onAction="#telaGerente" text="Gerente" />
+      <Button fx:id="enfermeiro" layoutX="89.0" layoutY="126.0" mnemonicParsing="false" onAction="#telaEnfermeiro" text="Enfermeiro" />
+      <Button fx:id="enfermidade" layoutX="113.0" layoutY="158.0" mnemonicParsing="false" onAction="#telaEnfermidade" text="Enfermidade" />
+   </children>
+</Pane>

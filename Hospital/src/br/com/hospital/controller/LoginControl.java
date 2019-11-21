@@ -2,6 +2,8 @@ package br.com.hospital.controller;
 
 import java.io.IOException;
 
+import com.mysql.jdbc.Connection;
+
 import application.Main;
 import br.com.hospital.util.Rotas;
 import javafx.event.ActionEvent;
