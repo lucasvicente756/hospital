@@ -21,7 +21,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import br.com.hospital.DAO.FuncionarioDAO;
 
 public class EditarFuncControl extends Main  implements Initializable{
-
+ 
     @FXML
     private TableColumn<Funcionario, String> idStatus;
 
