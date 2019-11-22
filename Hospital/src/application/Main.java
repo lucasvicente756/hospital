@@ -4,6 +4,10 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.ResourceBundle;
+
+import javax.print.DocFlavor.URL;
+
 import br.com.hospital.DAO.MedicoDAO;
 import br.com.hospital.conexao.Conexao;
 import br.com.hospital.util.Rotas;
@@ -46,5 +50,6 @@ public class Main extends Application{
 	public static void main (String[] args) throws SQLException {
 		launch(args);
 	}
+
 
 }
