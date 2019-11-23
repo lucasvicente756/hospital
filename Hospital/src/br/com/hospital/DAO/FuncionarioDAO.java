@@ -37,7 +37,7 @@ public class FuncionarioDAO {
 			
 			while (rs.next()) {
 				Funcionario fun = new Funcionario();
-				
+				fun.setIdFuncionario(rs.getInt("id"));
 				fun.setLogin(rs.getString("login"));
 				fun.setSenha(rs.getString("senha"));
 				fun.setStatusUsuario(rs.getString("statususuario"));

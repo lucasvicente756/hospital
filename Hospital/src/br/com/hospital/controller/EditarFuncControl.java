@@ -41,7 +41,7 @@ public class EditarFuncControl extends Main  implements Initializable{
     private TableColumn<Funcionario, String> idSenha;
     
     @FXML
-    private TableColumn<Funcionario, String> id;
+    private TableColumn<Funcionario, Integer> id;
 
     @FXML
     void excluirDados(ActionEvent event) {
@@ -69,7 +69,7 @@ public class EditarFuncControl extends Main  implements Initializable{
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		id.setCellValueFactory(new PropertyValueFactory<>("id"));
+		id.setCellValueFactory(new PropertyValueFactory<>("idFuncionario"));
 		idSenha.setCellValueFactory(new PropertyValueFactory<>("login"));
 		idLogin.setCellValueFactory(new PropertyValueFactory<>("senha"));
 		idStatus.setCellValueFactory(new PropertyValueFactory<>("statusUsuario"));
