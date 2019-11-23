@@ -25,8 +25,9 @@
           <TableColumn fx:id="idLogin" prefWidth="75.0" text="Login" />
           <TableColumn fx:id="idSenha" prefWidth="73.0" text="Senha" />
             <TableColumn fx:id="idStatus" prefWidth="73.0" text="Status" />
+            <TableColumn fx:id="id" prefWidth="73.0" text="Id" />
         </columns>
       </TableView>
-      <Button fx:id="btnExcluir" layoutX="95.0" layoutY="204.0" mnemonicParsing="false" onAction="#EntrarSistema" text="Excluir" />
+      <Button fx:id="btnExcluir" layoutX="95.0" layoutY="204.0" mnemonicParsing="false" onAction="#excluirDados" text="Excluir" />
    </children>
 </Pane>

@@ -42,13 +42,21 @@ public class FuncionarioDAO {
 				fun.setSenha(rs.getString("senha"));
 				fun.setStatusUsuario(rs.getString("statususuario"));
 				funcionarios.add(fun);
-
 			}
 		} catch (SQLException e) {
 			// TODO: handle exception
 		}
-		
 		return funcionarios;
+	}
+	
+	public void remove(Funcionario f) throws SQLException {
+		Conexao conn = new Conexao();
+		Connection conexao = conn.getConnection();
+		String sqlInsere = "DELETE from Funcionario where id =(?)";
+		PreparedStatement stmt = conexao.prepareStatement(sqlInsere);
+		stmt.setInt(1, f.getIdFuncionario());
+		System.out.println(f.getIdFuncionario());
+		stmt.execute();
 
 	}
 }

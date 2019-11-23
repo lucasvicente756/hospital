@@ -2,11 +2,11 @@ package br.com.hospital.controller;
 
 import java.io.IOException;
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.List;
 import java.util.ResourceBundle;
 
 import application.Main;
-import br.com.hospital.DAO.AtendimentoDAO;
 import br.com.hospital.model.Funcionario;
 import br.com.hospital.util.Rotas;
 import javafx.collections.FXCollections;
@@ -39,12 +39,26 @@ public class EditarFuncControl extends Main  implements Initializable{
 
     @FXML
     private TableColumn<Funcionario, String> idSenha;
+    
+    @FXML
+    private TableColumn<Funcionario, String> id;
 
     @FXML
-    void EntrarSistema(ActionEvent event) {
-    	
+    void excluirDados(ActionEvent event) {
+    	try {
+			Funcionario f = ListaFuncionario.getSelectionModel().getSelectedItem();
+			System.out.println("id:" + f.getIdFuncionario());
+			FuncionarioDAO fdao = new FuncionarioDAO();
+			fdao.remove(f);
+			openpage(Rotas.ADMINISTRADOR);
+		} catch (SQLException e) {
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (NullPointerException e) {
+
+		}
     }
-    
  
 
     @FXML
@@ -55,16 +69,14 @@ public class EditarFuncControl extends Main  implements Initializable{
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
+		id.setCellValueFactory(new PropertyValueFactory<>("id"));
 		idSenha.setCellValueFactory(new PropertyValueFactory<>("login"));
 		idLogin.setCellValueFactory(new PropertyValueFactory<>("senha"));
 		idStatus.setCellValueFactory(new PropertyValueFactory<>("statusUsuario"));
 		
 		FuncionarioDAO atdao = new FuncionarioDAO();
 		List<Funcionario> funcionarios = atdao.select();
-
-		System.out.println("Func " + funcionarios.size());
 		ObservableList<Funcionario> obsFun = FXCollections.observableArrayList(funcionarios);
-
 		ListaFuncionario.setItems(obsFun);
 		
 	}
